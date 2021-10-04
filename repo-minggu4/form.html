@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<meta charset="UTF-8"> 
+<title>REGISTRATION</title> 
+</head>
+
+<style>
+main-container {
+    width: 100%;
+    margin: 0px auto;
+}
+header {
+	width: 100%;
+    background-color: #000000;
+    padding: 8px;
+    color: white;
+}
+header:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+section {
+    float: left;
+    width: 20%;
+    font-size: 18px;
+    font-weight: bold;
+}
+nav {
+    width: 50%;
+    float: left;
+}
+nav ul {
+    list-style: none;
+}
+nav ul li {
+    float: left;
+    min-width: 10%;
+    padding: 4px;
+    margin-left: 10px;
+    background-color: #C9CBB9;
+    text-align: center;
+    color: red;
+}
+nav ul li a, a {
+    text-decoration: none;
+}
+footer {
+    width: 100%;
+    background-color: black;
+    padding: 10px;
+    color: white;
+	text-align: center;
+}
+h2{
+	text-align: center;
+}
+h3{
+	text-align
+}
+</style>
+
+<body style="background: url(form.jpg);background-size:cover;attachment: fixed;">
+
+	<div id="main-container">
+		<header id="header">
+		<section>Firmanega30</section>
+		
+			<nav>
+				<ul>
+					<li><a href="biodata.html">HOME</a>
+					</li>
+					<li><a href="portofolio.html">PORTOFOLIO</a>
+					</li>
+					<li><a href="form.html">REGISTRATION FORM</a>
+					</li>
+				</ul>				
+			</nav>
+		</header>
+	</div>
+	
+	<h2>JOIN WITH US</h2>
+	
+		<fieldset>
+		<legend>Registrasi</legend>
+		<p>
+			<label>Nama:</label>
+			<input type="text" name="nama" placeholder="Nama Lengkap"/>
+		</p>
+		<p>
+			<label>TTL:</label>
+			<input type="text" name="ttl" placeholder="Tempat Tanggal Lahir"/>
+		<p> 
+			<label>Jenis Kelamin:</label>
+			<label><input type="radio" name="JK" value="M"/>Laki-laki</label>
+			<label><input type="radio" name="JK" value="F"/>Perempuan</label>
+		</p>
+		<P>
+			<label>Asal:</label>
+			<input type="text" name="asal"/>
+		</p>
+		<p>
+			<label>Alamat:</label>
+			<input type="text" name="alamat"/>
+		</p>
+		<p>
+			<label>Agama:</label>
+			<select name="religion">
+				<option value="islam">Islam</open>
+				<option value="kristen">Kristen</option>
+				<option value="katolik">Katolik</option>
+				<option value="hindu">Hindu</option>
+				<option value="buddha">Buddha</option>
+				<option value="konghucu">Konghucu</option>
+			</select>
+		</p>
+		<p>
+			<label>Usia:</label>
+			<label><input type="number" id="usia" name="usia" min="20" max="35" placeholder="20-35"/>
+		</p>
+		<p>
+			<label>Biografi</label>
+			<textarea name="biografi"></textarea>
+		</p>
+		<p>
+			<label>Email:</label>
+			<input type="email" name="email" placeholder="Email kamu"/>
+		</p>
+		<p>
+			<input type="submit" name="submit" value="Daftar"/>
+		</p>
+		</fieldset>
+		</form>
+			
+			
+			
+			
+	
+<footer id="footer">UNIVERSITAS DIAN NUSWANTORO</footer>
+</body>
+</html>
