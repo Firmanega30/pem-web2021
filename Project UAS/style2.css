@@ -1,0 +1,95 @@
+body {
+    background: white;
+    background-repeat: no-repeat;
+}
+
+#card{
+    font-family: Arial, sans-serif;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.65);
+    height: 400px;
+    width: 350px;
+    margin: 6rem auto 8.1rem auto;
+    margin-top: 180px;
+}
+
+#card-content {
+    padding: 12px 44px;
+}
+
+#card-title {
+    letter-spacing: 4px;
+    padding-bottom: 23px;
+    padding-top: 13px;
+    text-align: center;
+}
+
+.underline-title {
+    background: -webkit-linear-gradient(right, #306ed0, #1e4d99);
+    height: 2px;
+    margin: -1.1rem auto 0 auto;
+    width: 89px;
+}
+
+a {
+    text-decoration: none;
+}
+
+label {
+    font-size: 11pt;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+input{
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+#forgot-pass {
+    font-size: 10pt;
+    margin-top: 3px;
+    text-align: right;
+}
+
+.form {
+    align-items: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-border {
+    background: -webkit-linear-gradient(right, #306ed0, #1e4d99);
+    height: 1px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.form-content {
+    background: white;
+    border: none;
+    outline: none;
+    padding-top: 14px;
+}
+
+button{
+    width: 100%;
+    padding: 5px 0;
+    border: none;
+    background-color:#2979ff;
+    font-size: 18px;
+    color: #fafafa;
+}
+
+footer{
+    background: #2b313b;
+    padding: 9px;
+    text-align: center;
+    color: white;
+}
+
+footer a{
+    margin-left: 10px;
+    float: left;
+}

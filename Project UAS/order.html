@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jasa Joki Game By Family Game</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+    
+<body>
+    
+<header>
+    <div class="header">
+        <a class="namacompany">Family Game</a>
+        <div class="header-right">
+            <a href="masuk.html">Masuk</a>
+        </div>
+    </div>
+</header>
+    
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="ml.html">Mobile Legends</a></li>
+        <li><a href="valo.html">VALORANT</a></li>
+        <li><a href="codm.html">CODM</a></li>
+        <li><a class="active" href="order.html">Order</a></li>
+    </ul>
+    
+    <div class="container">
+        <div class="col-lg-6 col-lg-offset-3">
+            <h4>Mohon Isikan Data Dengan Benar</h4>
+            <div class="panel panel-success">
+                <div class="panel-heading">
+                    Checkout Ke WhatsApp
+                </div>
+                <div class="panel-body">
+                    <div class="form-group">
+                        <label>Nama</label>
+                        <input type="text" name="name" class="form-control" placeholder="Nama" id="name">
+                    </div>
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" name="email" class="form-control" placeholder="Email" id="email">
+                    </div>
+                    <div class="form-group">
+                        <label>No. HP / WhatsApp</label>
+                        <input type="text" name="phone" class="form-control" placeholder="No. HP / Whatsapp" id="phone">
+                    </div>
+                    <div class="form-group">
+                        <label>Pilih Game</label>
+                        <select name="product" class="form-control" id="product">
+                            <option value="">-- Pilih Game --</option>
+                            <option value="Game_Mobile Legends">Mobile Legends</option>
+                            <option value="Game_Valorant">VALORANT</option>
+                            <option value="Game_CODM">Call of Duty Mobile</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Rank Yang Diinginkan</label>
+                        <textarea name="description" class="form-control" rows="3" id="description"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-success send">Order via WhatsApp</button>
+                    </div>
+                    
+                    <div id="text-info"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+<footer>
+    <a class="social-media-icon" href="https://www.instagram.com/jokigame_familygame/"><span class="fab fa-instagram"></span></a>
+    <a class="social-media-icon" href="https://www.facebook.com/ega.firman.12"><span class="fab fa-facebook"></span></a>
+    Copyright ©2022 Firman Resga. All Rights Reserved
+</footer>
+    
+<script>
+    $(document).on('click','.send', function(){
+    /* Inputan Formulir */
+    var input_name          = $("#name").val(),
+        input_email         = $("#email").val(),
+        input_phone         = $("#phone").val(),
+        input_product       = $("#product").val(),
+        input_description   = $("#description").val();
+ 
+    /* Pengaturan Whatsapp */
+    var walink      = 'https://web.whatsapp.com/send',
+        phone       = '6281333643858',
+        text        = 'Halo saya ingin memesan ',
+        text_yes    = 'Pesanan Anda akan kami proses.',
+        text_no     = 'Isi formulir terlebih dahulu.';
+ 
+    /* Smartphone Support */
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        var walink = 'whatsapp://send';
+    }
+ 
+    if(input_name != "" && input_phone != "" && input_product != ""){
+        /* Whatsapp URL */
+        var checkout_whatsapp = walink + '?phone=' + phone + '&text=' + text + '%0A%0A' +
+            '*Nama* : ' + input_name + '%0A' +
+            '*Alamat Email* : ' + input_email + '%0A' +
+            '*Nomor Kontak / Whatsapp* : ' + input_phone + '%0A' +
+            '*Produk* : ' + input_product + '%0A' +
+            '*Catatan* : ' + input_description + '%0A';
+ 
+        /* Whatsapp Window Open */
+        window.open(checkout_whatsapp,'_blank');
+        document.getElementById("text-info").innerHTML = '<div class="alert alert-success">'+text_yes+'</div>';
+    } else {
+        document.getElementById("text-info").innerHTML = '<div class="alert alert-danger">'+text_no+'</div>';
+    }
+});
+</script>
+    
+<!-- Buat Hapus Watermark Hosting -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+   $(document).ready(function(){      
+    $('body').find('img[src$="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"]').remove();
+   }); 
+</script>
+    
+</body>
+</html>

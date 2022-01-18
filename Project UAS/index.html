@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jasa Joki Game By Family Game</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+</head>
+    
+<body>
+    
+<header>
+    <div class="header">
+        <a class="namacompany">Family Game</a>
+        <div class="header-right">
+            <a href="masuk.html">Masuk</a>
+        </div>
+    </div>
+</header>
+    
+    <ul>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+    </ul>
+    
+    <div id="container">
+        
+        <div id="container-judul">
+            Welcome to Family Game
+        </div>
+        <center>
+        <div class="slider">
+            <div class="slides">
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                
+                <div class="slide first">
+                    <a href="ml.html"><img src="Image/bg-game1.jpg" alt=" Game Mobile Legends"></a>
+                </div>
+                <div class="slide">
+                    <a href="valo.html"><img src="Image/bg-game2.jpg" alt="Game Valorant"></a>
+                </div>
+                <div class="slide">
+                   <a href="codm.html"><img src="Image/bg-game3.jpg" alt="Game Call Of Duty Mobile"></a>
+                </div>
+                
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                </div>
+                
+            </div>
+            
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+            </div>
+        </div>
+        </center>
+        
+    </div>
+    
+    <center>
+    <div id="container2">
+        <h2>Apa Itu Joki Game?</h2>
+        <p>Joki Game adalah orang-orang yang bertugas untuk menaikkan level game atau untuk mendapatkan item tertentu
+        dalam game. Umumnya para penjoki memainkan akun dari penyewa jasa mereka. Tentu saja dalam joki game ini
+        merekalah orang-orang yang handal dan mampu memainkan game hingga berjam-jam, sehingga kemampuan mereka dapat
+        diperjualbelikan untuk para gamer yang ingin bermain game secara instan dan butuh eksistensi dalam dunia game.</p>
+    </div>
+    </center>
+    
+    <h3>Kenapa Family Game?</h3>
+    <article>
+        <div class="row">
+          <div class="column">
+            <div class="card">
+                <img src="Image/icon-1.png">
+                <br>
+                Pembayaran Cepat dan Mudah
+            </div>
+          </div>
+          <div class="column">
+            <div class="card">
+                <img src="Image/icon-2.png">
+                <br>
+                Jaminan Garansi dan Uang Kembali
+            </div>
+          </div>
+          <div class="column">
+            <div class="card">
+              <img src="Image/icon-3.png">
+                <br>
+                Proses Pengerjaan Cepat
+            </div>
+          </div>
+        </div>
+        
+        <br>
+        
+        <div class="row">
+          <div class="column">
+            <div class="card">
+                <img src="Image/icon-4.png">
+                <br>
+                Penjoki Professional
+            </div>
+          </div>
+          <div class="column">
+            <div class="card">
+                <img src="Image/icon-5.png">
+                <br>
+                Service 24 Jam
+            </div>
+          </div>
+          <div class="column">
+            <div class="card">
+              <img src="Image/icon-6.png">
+                <br>
+                Fast Response
+            </div>
+          </div>
+        </div>
+    </article>
+    
+    <h3>Game Populer Saat Ini</h3>
+    
+        <div class="row">
+          <div class="column">
+            <div class="card2">
+                <a href="ml.html"><img src="Image/bg-game1.jpg" alt=" Game Mobile Legends"></a>
+                <br>
+                Mobile Legends
+            </div>
+          </div>
+          <div class="column">
+            <div class="card2">
+               <a href="valo.html"><img src="Image/bg-game2.jpg" alt="Game Valorant"></a>
+                <br>
+                VALORANT
+            </div>
+          </div>
+          <div class="column">
+            <div class="card2">
+              <a href="codm.html"><img src="Image/bg-game3.jpg" alt="Game Call Of Duty Mobile"></a>
+                <br>
+                Call of Duty Mobile
+            </div>
+          </div>
+        </div>
+    
+<footer>
+    <a class="social-media-icon" href="https://www.instagram.com/jokigame_familygame/"><span class="fab fa-instagram"></span></a>
+    <a class="social-media-icon" href="https://www.facebook.com/ega.firman.12"><span class="fab fa-facebook"></span></a>
+    Copyright ©2022 Firman Resga. All Rights Reserved
+</footer>  
+    
+<script type="text/javascript">
+    var counter = 1;
+    setInterval(function(){
+        document.getElementById('radio' + counter).checked = true;
+        counter++;
+        if(counter > 3){
+            counter = 1;
+        }
+    }, 5000);
+</script>
+
+<!-- Buat Hapus Watermark Hosting -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+   $(document).ready(function(){      
+    $('body').find('img[src$="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"]').remove();
+   }); 
+</script>
+    
+</body>
+</html>

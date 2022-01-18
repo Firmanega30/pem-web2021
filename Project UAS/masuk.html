@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Jasa Joki Game By Family Game</title>
+    <link rel="stylesheet" type="text/css" href="style2.css">
+</head>
+
+<body>
+    
+    <div id="card">
+        <div id="card-title">
+            <h2 style="color: #1e4d99"> Family Game</h2>
+            <h2>Login</h2>
+            <div class="underline-title"></div>
+        </div>
+        
+        <form method="post" class="form">
+            <label for="user-email" style="padding-top: 13px">&nbsp;Email</label>
+            <input
+                   id="user-email"
+                   class="form-content"
+                   type="email"
+                   name="email"
+                   autocomplete="on"
+                   required />
+            <div class="form-border"></div>
+            
+            <label for="user-password" style="padding-top: 22px">&nbsp;Password</label>
+            <input
+                   id="user-password"
+                   class="form-content"
+                   type="password"
+                   name="password"
+                   required />
+            <div class="form-border"></div>
+            
+            <a href="#" style="margin-right: 40px;"><legend id="forgot-pass">Forgot Password?</legend></a>
+            <a href="index.html" style="text-align: center; margin-top: 50px" >Login</a>
+        </form>
+    </div>
+    
+<!-- Buat Hapus Watermark Hosting -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+   $(document).ready(function(){      
+    $('body').find('img[src$="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"]').remove();
+   }); 
+</script>
+    
+</body>
+</html>
